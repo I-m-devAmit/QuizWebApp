@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100, 300, 400, 500, 600, 700, 800, 900&display=swap");
+
+/* font-family: Inter;
+    font-style: normal;
+    font-weight: normal; */
+
+    .section-intro {
+      /* fallback for old browsers */
+      background: #6a11cb;
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+      }
+      
+.navbar {
+  position: fixed;
+  display: flex;
+  height: 13vh;
+  width: 100%;
+  opacity: 0.8;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.nav-item {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  color: red;
+  display: flex;
+  transition: all 0.5s;
+  z-index: 996;
+}
+
+.nav-item a {
+  color: burlywood;
+}
+
+.nav-item a:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+.left h2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  margin-left: 150px;
+}
+
+.right a {
+  margin-right: 150px;
+  font-size: 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  color: red;
+}
+
+.heading h2 {
+  color: red;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.heading h4 {
+  color: red;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.nav-flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.nav-flex-row li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  color: rgb(230, 0, 0);
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.section-intro {
+  height: 820px;
+  /* background: url('/src/app/homepage/image/photo.jpg'); */
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-intro h1 {
+  text-align: center;
+  color: #000;
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.section-intro header {
+  display: flex;
+  flex: 4;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-to-book-wrapper1 {
+  flex: 1;
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  background: yellow;
+}
+
+.link-to-book-wrapper {
+  flex: 1;
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  background: yellow;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3c0;
+  padding: 50px 30px;
+}
+
+.link-to-book {
+  color: #ffffff;
+  display: block;
+  border: 2px solid #ffffff;
+  padding: 5px 10px;
+}
+
+a.link-to-book:hover {
+  background-color: #ffffff;
+  color: #95999e;
+  text-decoration: none;
+}
+
+.about-section p,
+.about-section h3 {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+.carousel-inner {
+  height: 700px;
+}
+
+.row-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column-form {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 30px 20px;
+}
+
+.btn.btn-primary {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  background-color: #95999e;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+  border: 0;
+}
+
+.btn.btn-primary:hover {
+  background-color: #747474;
+}
+.opening-time,
+.contact-address {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  flex: 1;
+  margin: 30px 20px;
+  font-size: 1.2em;
+}
+
+.form-group p {
+  font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-address p span {
+  display: block;
+}
+
+.class1 {
+  display: flex;
+  position: absolute;
+  padding: 15px;
+  width: 100%;
+}
+
+.cls2 {
+  font-weight: 700;
+  font-size: 44px;
+  color: burlywood !important;
+}
+
+.navBar {
+  display: flex;
+  width: 56%;
+  margin-top: 12px;
+  align-items: center;
+  font-size: 26px;
+  margin-left: 110px;
+  justify-content: space-between;
+}
+
+@media (min-width: 577px) and (max-width: 800px) {
+
+
+  .section-intro {
+    height: 500px;
+  }
+
+  .about-section p,
+  .about-section h3 {
+    font-size: 20px;
+  }
+
+  .carousel-inner {
+    height: auto;
+  }
+
+  .row-flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section-intro {
+    height: 300px;
+  }
+
+  .about-section {
+    padding: 30px;
+  }
+
+  .section-intro h1 {
+    font-size: 2em;
+  }
+
+  .about-section p,
+  .about-section h3 {
+    font-size: 15px;
+  }
+
+  .carousel-inner {
+    height: auto;
+  }
+
+  .row-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row-flex h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .form-group p {
+    font-size: 15px;
+  }
+
+  .opening-time p span,
+  .contact-address p span {
+    font-size: 15px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "question": "What is Js ?",
+      "option1": "a ",
+      "option2": "b",
+      "option3": " c",
+      "option4": "d"
+    },
+    {
+      "id": 2,
+      "question": "what is angular?",
+      "option1": "a",
+      "option2": "b",
+      "option3": "c",
+      "option4": "d"
+    },
+    {
+      "id": 4,
+      "question": "What is HTML?",
+      "option1": "a",
+      "option2": "b",
+      "option3": "c",
+      "option4": "d"
+    },
+    {
+      "id": 5,
+      "question": "What is CSS?",
+      "option1": "a",
+      "option2": "b",
+      "option3": "c",
+      "option4": "d"
+    },
+    {
+      "id": 3,
+      "question": "What is ts?",
+      "option1": "a",
+      "option2": "b",
+      "option3": "c",
+      "option4": "d"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

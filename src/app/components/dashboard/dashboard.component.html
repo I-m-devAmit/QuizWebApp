@@ -1,0 +1,83 @@
+<!-- <p>dashboard works!</p> -->
+<nav class="navbar navbar-light bg-dark">
+  <div class="container-fluid">
+      <h1 style= "color: yellow;"> Question Section</h1>
+      <div class="d-flex">
+          <button (click)="clickAddData()" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success">Add Questions </button>
+      </div>
+  </div>
+</nav>
+
+<table class="table mt-3"> 
+  <thead> 
+      <tr >
+          <th scope="col"> Question No</th>
+          <th scope="col"> Question</th>
+          <th scope="col"> Option 1</th>
+          <th scope="col"> Option 2</th>
+          <th scope="col"> Option 3</th>
+          <th scope="col"> Option 4</th>
+          <th scope="col"> Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let row of allData; let i=index">
+        <td> {{i+1}}</td>
+        <td> {{row.question}}</td>
+        <td> {{row.option1}}</td>
+        <td> {{row.option2}}</td>
+        <td> {{row.option3}}</td>
+        <td> {{row.option4}}</td>
+          <td>
+              <!-- <button (click)="onEdit(row)" style="color: aliceblue;" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-info">Edit</button> -->
+              <button (click)="deleteData(row)" class="btn btn-danger mx-3">Delete</button>
+          </td>
+
+      </tr>
+  </tbody>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Question Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form  [formGroup] ="formValue">
+              <div class="mb-3">
+                <label for="question">Question</label>
+                <input type="text" formControlName="question" class="form-control" id="exampleQuestion" placeholder="Enter Question">
+              </div>
+              <div class="mb-3">
+                <label for="option1">Option 1</label>
+                <input type="text" formControlName="option1" class="form-control" id="exampleOption1" placeholder="Option1" >
+              </div>
+              <div class="mb-3">
+                <label for="option2">Option 2</label>
+                <input type="text" formControlName="option2" class="form-control" id="exampleOption2" placeholder="Option2">
+              </div>
+              <div class="mb-3">
+                <label for="option3">Option 3</label>
+                <input type="text" formControlName="option3" class="form-control" id="exampleOption3"  placeholder="Option3">
+              </div>
+              <div class="mb-3">
+                <label for="option4">Option 4</label>
+                <input type="text" formControlName="option4"  class="form-control" id="exampleOption4" placeholder="Option4">
+              </div>    
+            </form> 
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" *ngIf="showAdd" id ="cancel" class="btn btn-secondary" data-bs-dismiss="modal"> Close </button>
+        <button type="button" *ngIf="showAdd" (click)= "postDetailData()" class="btn btn-primary"> Add </button>
+        <button type="button" *ngIf="ShowUpdate" (click)= "updateDetailData()" class="btn btn-primary" data-bs-dismiss="modal"> Update </button>
+
+      </div>
+    </div>
+  </div>
+</div>
